@@ -1,0 +1,22 @@
+<%- include("header.ejs") -%>
+
+  <div class="box" id="heading">
+    <h1> <%= listTitle %></h1>
+  </div>
+
+  <div class="box">
+    <% for (var i=0; i<newListItems.length; i++){ %>
+    <div class="item">
+      <input type="checkbox">
+      <p><%= newListItems[i] %></p>
+    </div>
+    <!-- 새로운 item이 추가될때마다 li 리스트가 새로 생기게 된다. -->
+    <% } %>
+    <!-- Add 버튼을 누르면 newItem이라는 변수에 새로운 목록들이 저장되고 루트 라우트에서 post 요청을 트리거한다.-->
+    <form class="item" action="/" method="post">
+      <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+      <button type="submit" name="list" value=<%= listTitle %></button>+</button>
+    </form>
+  </div>
+
+<%- include("footer.ejs") -%>
