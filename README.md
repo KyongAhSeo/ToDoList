@@ -1,7 +1,7 @@
-# ToDoList-v1
-A simple to do list application using node.js
+# To-Do List
+A simple to do list application
 
 # Website
-<a href="https://intense-crag-51314.herokuapp.com/"></a>
+<a href="https://intense-crag-51314.herokuapp.com"></a>
 
-# EJS, Node.js, Express.js
+# Javascript, EJS, Node.js, Express.js
